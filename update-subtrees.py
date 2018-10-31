@@ -19,6 +19,7 @@ def main(repos, chdir):
     with open("subtrees.json", "r") as f:
         subtrees = json.load(f)
 
+    print(subtrees)
     for entry in subtrees:
         path = entry["path"]
         url = entry["url"]
