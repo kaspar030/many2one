@@ -1,0 +1,13 @@
+[Unit]
+Description=many2one git repo combiner
+After=network.target
+
+[Service]
+Type=simple
+User=many2one
+ExecStart=/srv/many2one/many2one.py repos/or5-ci
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
